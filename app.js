@@ -32,7 +32,7 @@ const html = `
     <div>
       <h3>Request Information</h3>
       <ul>
-        <li>Path: ${req.path}</li>
+        <li>Path: ${req.originalUrl}</li>
         <li>Query String: ${JSON.stringify(req.query)}</li>
         <li>Headers: <pre>${JSON.stringify(req.headers, null, 2)}</pre></li>
       </ul>
